@@ -15,8 +15,9 @@ module.exports = {
     await queryInterface.bulkInsert('Reviews', [
       {
         user_id: 1,
-        rating: '4/5',
+        rating: '4',
         review_text: 'Dengan harga yang mahal servicesnya sangat memuaskan hati dan badan',
+        reviewer: JSON.stringify({ name: 'Ujang', email: 'Ujang@jabar.com' }),
         createdAt: new Date(),
         updatedAt: new Date()
       },
